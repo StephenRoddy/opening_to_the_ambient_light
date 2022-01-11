@@ -79,11 +79,11 @@ function draw() {
   cos_pos  = amp_cos;
   sin_pos = amp_sin;
 
-  ambientMaterial(bass);  // controling the materials and shininess from the data
-  shininess((treble+highMid+mid)/3);
+  ambientMaterial((lowMid+mid)/2);  // controling the materials and shininess from the data
+  shininess((treble+highMid)/2);
 
   particle_size = map(bass+lowMid,0,510,0,7); //original was a size of 0 to 7
-  fill(treble,(lowMid+mid+highMid)/3,bass); // color map
+  fill((treble+highMid)/2,(lowMid+mid)/2,bass); // color map
 
  // ambientLight(mid);
   // make an x and y grid of ellipses
@@ -120,8 +120,7 @@ function draw() {
       const myX = x + 30 * cos(2 * PI  + angle); // no x direction movement
       const myY = y + 20 * sin(1 * PI  + angle);
 
-      ellipse(myX, myY, particle_size); // draw particle
-
+      circle(myX, myY, particle_size); // originally ellipse(myX, myY, particle_size);
     }
 
   }
