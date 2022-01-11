@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-
+  
 }
 canvas {
   position: absolute;
@@ -53,7 +53,7 @@ canvas {
   to{ bottom:0; opacity:1 }
 }
 
-#myDiv {
+#displayer {
   display: none;
   text-align: center;
 }
