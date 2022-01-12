@@ -27,7 +27,7 @@ let cnt=0;
 let bass, lowMid, mid, highMid, treble;
 
 function preload() {
-audio = loadSound("../audio/Opening to the Ambient Light.mp3");
+audio = loadSound("./audio/Opening to the ambient light.mp3");
 }
 
 function setup() {
